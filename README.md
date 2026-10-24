@@ -43,10 +43,13 @@ python -m venv .venv
 .venv\\Scripts\\activate
 pip install -r requirements.txt
 python pas_pairs_shadow.py --once
+set HISTORY_DIR=C:\\path\\to\\history
 python official_score_validation.py
 ```
 
 실행 주문 경로는 Testnet 전용이며, 별도 API 지갑과 명시적인 이중 실행 플래그를 요구합니다. 실제 개인키는 `.env`에만 보관하고 절대로 커밋하지 마세요. `pas_pairs_live.py`를 실행하기 전에 PAS DEX 규칙과 대회 규칙을 직접 확인해야 합니다.
+
+`official_score_validation.py`는 오프라인 연구용이다. `HISTORY_DIR`에 시간봉 `BTC.csv`, `ETH.csv`, `EWY.csv`가 있어야 하며, 시장 이력 파일은 이 저장소에 포함하지 않는다.
 
 ### 주의
 
@@ -97,10 +100,13 @@ python -m venv .venv
 .venv\\Scripts\\activate
 pip install -r requirements.txt
 python pas_pairs_shadow.py --once
+set HISTORY_DIR=C:\\path\\to\\history
 python official_score_validation.py
 ```
 
 The order path is restricted to Testnet and requires a separate API wallet plus two explicit command-line gates. Keep real private keys only in a local `.env` file and never commit them. Read the PAS DEX and competition rules before using `pas_pairs_live.py`.
+
+`official_score_validation.py` is an offline study. It requires hourly `BTC.csv`, `ETH.csv`, and `EWY.csv` under `HISTORY_DIR`; market-history files are deliberately not included in this repository.
 
 ### Disclaimer
 
