@@ -6,4 +6,9 @@ logs/
 data/
 runtime/
 bot_config.local.json
+research/
+output/
+vendor/
+*.csv
+*.zip
 

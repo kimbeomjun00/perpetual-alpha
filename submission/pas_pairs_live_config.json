@@ -1,0 +1,12 @@
+{
+  "strategy_config": "pas_pairs_config.json",
+  "poll_seconds": 60,
+  "exchange": {
+    "base_url": "https://api.hyperliquid-testnet.xyz",
+    "dex": "pas",
+    "max_slippage": 0.003
+  },
+  "state_file": "runtime/pas_pairs_live_state.json",
+  "control_file": "runtime/pas_pairs_live_control.txt",
+  "log_file": "logs/pas_pairs_live.jsonl"
+}

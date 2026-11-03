@@ -1,0 +1,49 @@
+{
+  "mode": "shadow_only",
+  "dex": "pas",
+  "quote_asset": "USDP",
+  "account_equity_usd": 100000,
+  "poll_seconds": 3600,
+  "signal": {
+    "base": "BTC",
+    "correlation_min": 0.7,
+    "gap_min": 0.015,
+    "btc_vol_window_hours": 24,
+    "high_vol_threshold": 0.006,
+    "high_vol_size_multiplier": 0.75
+  },
+  "pairs": [
+    {
+      "symbol": "EWY",
+      "weight": 0.85,
+      "corr_window_hours": 24,
+      "lag_hours": 12,
+      "take_recovery_fraction": 1.0,
+      "widen_fraction": 1.0,
+      "max_hold_hours": 12
+    },
+    {
+      "symbol": "ETH",
+      "weight": 0.15,
+      "corr_window_hours": 72,
+      "lag_hours": 3,
+      "take_recovery_fraction": 0.5,
+      "widen_fraction": 0.5,
+      "max_hold_hours": 24
+    }
+  ],
+  "risk": {
+    "gross_exposure_fraction": 0.65,
+    "daily_loss_fraction": 0.03,
+    "peak_drawdown_fraction": 0.06,
+    "daily_reset_hour_utc": 12,
+    "fill_timeout_seconds": 5,
+    "max_leg_mismatch_fraction": 0.05
+  },
+  "execution": {
+    "mode": "shadow_only",
+    "equal_usd_legs": true,
+    "entry_price_model": "next_hour_open",
+    "live_order_submission": false
+  }
+}
