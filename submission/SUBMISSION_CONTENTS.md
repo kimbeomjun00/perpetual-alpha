@@ -14,6 +14,8 @@ Included files:
 - `requirements.txt`: Python dependencies.
 - `.env.example`: variable names only. No secret is included.
 - `README.md`: Korean and English project overview and reproducibility instructions.
+- `report/PA26-lifeisluck-report.pdf`: final technical report submitted to the organizers.
+- `report/PA26-lifeisluck-report.tex` and `report/live_results.png`: editable LaTex source and its embedded live-results figure.
 
 Excluded deliberately:
 
